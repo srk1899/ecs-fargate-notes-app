@@ -46,3 +46,4 @@ jobs:
         cluster: notes-app-cluster
         service: notes-app-svc
         task-definition: ${{ steps.render.outputs.task-definition }}
+
