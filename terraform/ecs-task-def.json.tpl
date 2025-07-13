@@ -1,6 +1,7 @@
 {
   "family": "notes-app-task",
   "networkMode": "awsvpc",
+  "executionRoleArn": "arn:aws:iam::890742579135:role/ecsTaskExecutionRole",
   "requiresCompatibilities": ["FARGATE"],
   "cpu": "256",
   "memory": "512",
@@ -12,6 +13,7 @@
       "portMappings": [
         {
           "containerPort": 80,
+          "hostPort": 80,
           "protocol": "tcp"
         }
       ]
